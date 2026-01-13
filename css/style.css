@@ -180,3 +180,16 @@ footer .glyphicon {
     height: auto;
     filter: grayscale(20%);
 }
+
+.project-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project-btn {
+    margin-top: 10px;
+}
