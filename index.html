@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Yejin Portfolio</title>
+    <title>YEJINJUNG | Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="YEJINJUNG portfolio - Web/Backend projects and skills.">
 
-    <meta name="description" content="정예진 포트폴리오 - Web/Backend 프로젝트 및 기술 스택 정리">
+    <!-- Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap & Fonts -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -20,19 +22,20 @@
     <script src="js/script.js"></script>
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="70">
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-label="Toggle navigation">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#myPage">Yejin</a>
+            <a class="navbar-brand" href="#myPage">YEJINJUNG</a>
         </div>
+
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#about">ABOUT</a></li>
@@ -45,145 +48,195 @@
 </nav>
 
 <!-- HERO -->
-<div class="jumbotron text-center">
-    <h1>정예진</h1>
-    <p>Software Convergence · Web / Backend · Mobility Interest</p>
+<header class="hero">
+    <div class="container hero-inner">
+        <p class="hero-eyebrow">Web / Backend · Mobility Interest</p>
+        <h1 class="hero-title">YEJINJUNG</h1>
+        <p class="hero-subtitle">
+            I build clean, reliable web services with a focus on structure, collaboration, and finish quality.
+        </p>
 
-    <div class="hero-buttons">
-        <a href="#portfolio" class="btn btn-danger btn-lg">프로젝트 보기</a>
-        <a href="#contact" class="btn btn-default btn-lg">연락하기</a>
-    </div>
+        <div class="hero-cta">
+            <a href="https://github.com/nnginii04" target="_blank" class="btn btn-primary btn-lg">GitHub</a>
+            <a href="https://nnginii.tistory.com/" target="_blank" class="btn btn-default btn-lg">Blog</a>
+            <a href="#portfolio" class="btn btn-ghost btn-lg">View Projects</a>
+        </div>
 
-    <div class="hero-links">
-        <a href="https://github.com/nnginii04" target="_blank" class="btn btn-default btn-lg">GitHub</a>
-        <a href="https://nnginii.tistory.com/" target="_blank" class="btn btn-default btn-lg">Blog</a>
+        <div class="hero-meta">
+            <span class="hero-chip">Inter</span>
+            <span class="hero-chip">Navy Theme</span>
+            <span class="hero-chip">Bootstrap</span>
+        </div>
     </div>
-</div>
+</header>
 
 <!-- ABOUT -->
-<div id="about" class="container-fluid">
-    <div class="row">
-        <div class="col-sm-8">
-            <h2>About Me</h2>
-            <h4>
-                소프트웨어융합학과에 재학 중이며,
-                웹 기반 서비스 구조와 백엔드 로직 구현에 관심을 가지고 있습니다.
-            </h4>
+<section id="about" class="section">
+    <div class="container">
+        <div class="row section-grid">
+            <div class="col-sm-8">
+                <h2 class="section-title">About</h2>
+                <p class="section-lead">
+                    소프트웨어융합학과에 재학 중이며, 웹 기반 서비스 구조와 백엔드 로직 구현에 관심을 가지고 있습니다.
+                </p>
 
-            <ul class="about-list">
-                <li><strong>관심</strong> : Web/Backend, 모빌리티 도메인, 서비스 구조 설계</li>
-                <li><strong>강점</strong> : 기능 단위로 쪼개서 구현하고, Git 커밋 흐름으로 정리하며 완성도 있게 마무리</li>
-                <li><strong>목표</strong> : 사용자가 편하게 쓰는 서비스를 안정적으로 만드는 개발자</li>
-            </ul>
-        </div>
-        <div class="col-sm-4 text-center">
-            <span class="glyphicon glyphicon-user logo"></span>
+                <ul class="about-list">
+                    <li><strong>관심</strong> : Web/Backend, 모빌리티 도메인, 서비스 구조 설계</li>
+                    <li><strong>강점</strong> : 기능을 작은 단위로 분리하고, Git 커밋 흐름으로 정리하며 완성도 있게 마무리</li>
+                    <li><strong>목표</strong> : 사용자 입장에서 안정적인 서비스를 만드는 개발자</li>
+                </ul>
+            </div>
+
+            <div class="col-sm-4 text-center">
+                <div class="about-badge">
+                    <span class="glyphicon glyphicon-user"></span>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- SKILLS -->
-<div id="services" class="container-fluid text-center bg-grey">
-    <h2>SKILLS</h2>
-    <h4>사용해본 기술 스택</h4>
-    <br>
+<section id="services" class="section section-muted">
+    <div class="container text-center">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-lead">사용해본 기술 스택</p>
 
-    <div class="row slideanim">
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-console logo-small"></span>
-            <h4>Backend</h4>
-            <p>Java, Spring Boot, MySQL</p>
-        </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-globe logo-small"></span>
-            <h4>Frontend</h4>
-            <p>HTML, CSS, JavaScript, Bootstrap</p>
-        </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-cog logo-small"></span>
-            <h4>Tools</h4>
-            <p>Git, GitHub, IntelliJ, VS Code</p>
+        <div class="row slideanim skill-row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-icon">
+                        <span class="glyphicon glyphicon-console"></span>
+                    </div>
+                    <h4 class="card-title">Backend</h4>
+                    <p class="card-text">Java, Spring Boot, MySQL</p>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-icon">
+                        <span class="glyphicon glyphicon-globe"></span>
+                    </div>
+                    <h4 class="card-title">Frontend</h4>
+                    <p class="card-text">HTML, CSS, JavaScript, Bootstrap</p>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-icon">
+                        <span class="glyphicon glyphicon-cog"></span>
+                    </div>
+                    <h4 class="card-title">Tools</h4>
+                    <p class="card-text">Git, GitHub, IntelliJ, VS Code</p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- PROJECTS -->
-<div id="portfolio" class="container-fluid text-center">
-    <h2>Projects</h2>
-    <h4>수업 및 개인 프로젝트</h4>
-    <br>
+<section id="portfolio" class="section">
+    <div class="container text-center">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-lead">수업 및 개인 프로젝트</p>
 
-    <div class="row slideanim">
-        <!-- Project 1 -->
-        <div class="col-sm-4">
-            <div class="thumbnail project-card">
-                <img src="assets/images/paris.jpg" alt="project1">
-                <p><strong>Spring MVC 웹 프로젝트</strong></p>
-                <p class="project-desc">
-                    Spring MVC 구조 기반으로 컨트롤러–서비스–뷰 흐름을 구현한 웹 프로젝트
-                </p>
-                <p><strong>Tech</strong> : Java, Spring, HTML, CSS</p>
-                <a href="https://github.com/nnginii04" target="_blank" class="btn btn-default btn-sm project-btn">GitHub</a>
+        <div class="row slideanim project-row">
+            <!-- Project 1 -->
+            <div class="col-sm-4">
+                <div class="project-card">
+                    <img src="assets/images/paris.jpg" alt="Spring MVC project">
+                    <div class="project-body">
+                        <p class="project-title"><strong>Spring MVC 웹 프로젝트</strong></p>
+                        <p class="project-desc">
+                            Spring MVC 구조 기반으로 컨트롤러–서비스–뷰 흐름을 구현한 웹 프로젝트
+                        </p>
+                        <p class="project-tech"><strong>Tech</strong> : Java, Spring, HTML, CSS</p>
+                        <a href="https://github.com/nnginii04" target="_blank" class="btn btn-default btn-sm project-btn">GitHub</a>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <!-- Project 2 -->
-        <div class="col-sm-4">
-            <div class="thumbnail project-card">
-                <img src="assets/images/newyork.jpg" alt="project2">
-                <p><strong>데이터 분석 미니 프로젝트</strong></p>
-                <p class="project-desc">
-                    공공 데이터를 활용한 데이터 전처리 및 간단한 시각화를 수행한 프로젝트
-                </p>
-                <p><strong>Tech</strong> : Python, Pandas</p>
-                <a href="https://github.com/nnginii04" target="_blank" class="btn btn-default btn-sm project-btn">GitHub</a>
+            <!-- Project 2 -->
+            <div class="col-sm-4">
+                <div class="project-card">
+                    <img src="assets/images/newyork.jpg" alt="Data analysis project">
+                    <div class="project-body">
+                        <p class="project-title"><strong>데이터 분석 미니 프로젝트</strong></p>
+                        <p class="project-desc">
+                            공공 데이터를 활용한 데이터 전처리 및 간단한 시각화를 수행한 프로젝트
+                        </p>
+                        <p class="project-tech"><strong>Tech</strong> : Python, Pandas</p>
+                        <a href="https://github.com/nnginii04" target="_blank" class="btn btn-default btn-sm project-btn">GitHub</a>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <!-- Project 3 -->
-        <div class="col-sm-4">
-            <div class="thumbnail project-card">
-                <img src="assets/images/sanfran.jpg" alt="project3">
-                <p><strong>팀 프로젝트 / 협업 경험</strong></p>
-                <p class="project-desc">
-                    GitHub 기반 협업으로 이슈 관리 및 커밋 단위 작업 흐름을 경험한 프로젝트
-                </p>
-                <p><strong>Tech</strong> : Git, GitHub</p>
-                <a href="https://github.com/nnginii04" target="_blank" class="btn btn-default btn-sm project-btn">GitHub</a>
+            <!-- Project 3 -->
+            <div class="col-sm-4">
+                <div class="project-card">
+                    <img src="assets/images/sanfran.jpg" alt="Team collaboration project">
+                    <div class="project-body">
+                        <p class="project-title"><strong>팀 프로젝트 / 협업 경험</strong></p>
+                        <p class="project-desc">
+                            GitHub 기반 협업으로 이슈 관리 및 커밋 단위 작업 흐름을 경험한 프로젝트
+                        </p>
+                        <p class="project-tech"><strong>Tech</strong> : Git, GitHub</p>
+                        <a href="https://github.com/nnginii04" target="_blank" class="btn btn-default btn-sm project-btn">GitHub</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- CONTACT -->
-<div id="contact" class="container-fluid bg-grey">
-    <h2 class="text-center">CONTACT</h2>
-    <div class="row">
-        <div class="col-sm-5">
-            <p>
-                <span class="glyphicon glyphicon-envelope"></span>
-                <a href="mailto:love040416@naver.com">love040416@naver.com</a>
-            </p>
-            <p>
-                <span class="glyphicon glyphicon-link"></span>
-                <a href="https://github.com/nnginii04" target="_blank">GitHub</a> /
-                <a href="https://nnginii.tistory.com/" target="_blank">Blog</a>
-            </p>
-        </div>
-        <div class="col-sm-7">
-            <p class="contact-note">감사합니다 😊</p>
+<section id="contact" class="section section-muted">
+    <div class="container">
+        <h2 class="section-title text-center">Contact</h2>
+
+        <div class="row contact-grid">
+            <div class="col-sm-6">
+                <div class="contact-card">
+                    <p class="contact-line">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        <a href="mailto:love040416@naver.com">love040416@naver.com</a>
+                    </p>
+                    <p class="contact-line">
+                        <span class="glyphicon glyphicon-link"></span>
+                        <a href="https://github.com/nnginii04" target="_blank">GitHub</a>
+                        <span class="contact-sep">·</span>
+                        <a href="https://nnginii.tistory.com/" target="_blank">Blog</a>
+                    </p>
+                    <p class="contact-note">Thanks for visiting.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="contact-card contact-card-alt">
+                    <p class="contact-small-title">Quick Summary</p>
+                    <ul class="contact-mini">
+                        <li>Inter typography</li>
+                        <li>Navy corporate tone</li>
+                        <li>Clean section structure</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- MAP -->
 <img src="assets/images/map.jpg" class="img-responsive map-image" alt="map">
 
-<footer class="container-fluid text-center">
-    <a href="#myPage" title="To Top">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-    </a>
-    <p>© 2026 Yejin Portfolio</p>
+<footer class="footer">
+    <div class="container text-center">
+        <a href="#myPage" class="to-top" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p class="footer-text">© 2026 YEJINJUNG Portfolio</p>
+    </div>
 </footer>
 
 </body>
