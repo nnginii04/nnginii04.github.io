@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta name="description" content="정예진 포트폴리오 - Web/Backend 프로젝트 및 기술 스택 정리">
+
     <!-- Bootstrap & Fonts -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -46,9 +48,15 @@
 <div class="jumbotron text-center">
     <h1>정예진</h1>
     <p>Software Convergence · Web / Backend · Mobility Interest</p>
-    <div style="margin-top:30px;">
+
+    <div class="hero-buttons">
         <a href="#portfolio" class="btn btn-danger btn-lg">프로젝트 보기</a>
         <a href="#contact" class="btn btn-default btn-lg">연락하기</a>
+    </div>
+
+    <div class="hero-links">
+        <a href="https://github.com/nnginii04" target="_blank" class="btn btn-default btn-lg">GitHub</a>
+        <a href="https://nnginii.tistory.com/" target="_blank" class="btn btn-default btn-lg">Blog</a>
     </div>
 </div>
 
@@ -58,13 +66,15 @@
         <div class="col-sm-8">
             <h2>About Me</h2>
             <h4>
-                소프트웨어융합학과에 재학 중이며,  
+                소프트웨어융합학과에 재학 중이며,
                 웹 기반 서비스 구조와 백엔드 로직 구현에 관심을 가지고 있습니다.
             </h4>
-            <p>
-                프로젝트 경험을 통해 기획 → 구현 → 정리까지의 흐름을 중요하게 생각하며,  
-                최근에는 모빌리티·자동차 도메인과 결합된 소프트웨어에 관심을 두고 있습니다.
-            </p>
+
+            <ul class="about-list">
+                <li><strong>관심</strong> : Web/Backend, 모빌리티 도메인, 서비스 구조 설계</li>
+                <li><strong>강점</strong> : 기능 단위로 쪼개서 구현하고, Git 커밋 흐름으로 정리하며 완성도 있게 마무리</li>
+                <li><strong>목표</strong> : 사용자가 편하게 쓰는 서비스를 안정적으로 만드는 개발자</li>
+            </ul>
         </div>
         <div class="col-sm-4 text-center">
             <span class="glyphicon glyphicon-user logo"></span>
@@ -73,7 +83,7 @@
 </div>
 
 <!-- SKILLS -->
-<div id="services" class="container-fluid text-center">
+<div id="services" class="container-fluid text-center bg-grey">
     <h2>SKILLS</h2>
     <h4>사용해본 기술 스택</h4>
     <br>
@@ -97,9 +107,8 @@
     </div>
 </div>
 
-
 <!-- PROJECTS -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
+<div id="portfolio" class="container-fluid text-center">
     <h2>Projects</h2>
     <h4>수업 및 개인 프로젝트</h4>
     <br>
@@ -110,12 +119,11 @@
             <div class="thumbnail project-card">
                 <img src="assets/images/paris.jpg" alt="project1">
                 <p><strong>Spring MVC 웹 프로젝트</strong></p>
-                <p>
-                    Spring MVC 구조를 기반으로  
-                    컨트롤러–서비스–뷰 흐름을 구현한 웹 프로젝트
+                <p class="project-desc">
+                    Spring MVC 구조 기반으로 컨트롤러–서비스–뷰 흐름을 구현한 웹 프로젝트
                 </p>
                 <p><strong>Tech</strong> : Java, Spring, HTML, CSS</p>
-                <a href="#" class="btn btn-default btn-sm project-btn">GitHub</a>
+                <a href="https://github.com/nnginii04" target="_blank" class="btn btn-default btn-sm project-btn">GitHub</a>
             </div>
         </div>
 
@@ -124,12 +132,11 @@
             <div class="thumbnail project-card">
                 <img src="assets/images/newyork.jpg" alt="project2">
                 <p><strong>데이터 분석 미니 프로젝트</strong></p>
-                <p>
-                    공공 데이터를 활용한  
-                    데이터 전처리 및 시각화 프로젝트
+                <p class="project-desc">
+                    공공 데이터를 활용한 데이터 전처리 및 간단한 시각화를 수행한 프로젝트
                 </p>
                 <p><strong>Tech</strong> : Python, Pandas</p>
-                <a href="#" class="btn btn-default btn-sm project-btn">GitHub</a>
+                <a href="https://github.com/nnginii04" target="_blank" class="btn btn-default btn-sm project-btn">GitHub</a>
             </div>
         </div>
 
@@ -138,28 +145,33 @@
             <div class="thumbnail project-card">
                 <img src="assets/images/sanfran.jpg" alt="project3">
                 <p><strong>팀 프로젝트 / 협업 경험</strong></p>
-                <p>
-                    GitHub 기반 협업으로  
-                    이슈 관리 및 커밋 흐름을 경험한 프로젝트
+                <p class="project-desc">
+                    GitHub 기반 협업으로 이슈 관리 및 커밋 단위 작업 흐름을 경험한 프로젝트
                 </p>
                 <p><strong>Tech</strong> : Git, GitHub</p>
-                <a href="#" class="btn btn-default btn-sm project-btn">GitHub</a>
+                <a href="https://github.com/nnginii04" target="_blank" class="btn btn-default btn-sm project-btn">GitHub</a>
             </div>
         </div>
     </div>
 </div>
-
 
 <!-- CONTACT -->
 <div id="contact" class="container-fluid bg-grey">
     <h2 class="text-center">CONTACT</h2>
     <div class="row">
         <div class="col-sm-5">
-            <p><span class="glyphicon glyphicon-envelope"></span> your_email@example.com</p>
-            <p><span class="glyphicon glyphicon-link"></span> GitHub / Blog</p>
+            <p>
+                <span class="glyphicon glyphicon-envelope"></span>
+                <a href="mailto:love040416@naver.com">love040416@naver.com</a>
+            </p>
+            <p>
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="https://github.com/nnginii04" target="_blank">GitHub</a> /
+                <a href="https://nnginii.tistory.com/" target="_blank">Blog</a>
+            </p>
         </div>
         <div class="col-sm-7">
-            <p>감사합니다 😊</p>
+            <p class="contact-note">감사합니다 😊</p>
         </div>
     </div>
 </div>
@@ -168,7 +180,9 @@
 <img src="assets/images/map.jpg" class="img-responsive map-image" alt="map">
 
 <footer class="container-fluid text-center">
-    <a href="#myPage"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
     <p>© 2026 Yejin Portfolio</p>
 </footer>
 

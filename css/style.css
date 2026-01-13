@@ -193,3 +193,56 @@ footer .glyphicon {
 .project-btn {
     margin-top: 10px;
 }
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.hero-links {
+    margin-top: 12px;
+}
+
+.about-list {
+    margin-top: 18px;
+    padding-left: 18px;
+    text-align: left;
+    display: inline-block;
+}
+
+.about-list li {
+    margin-bottom: 8px;
+}
+
+.project-card {
+    padding: 20px;
+    height: 480px;
+    position: relative;
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.project-desc {
+    min-height: 78px;
+}
+
+.project-btn {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact-note {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+    filter: grayscale(20%);
+}
