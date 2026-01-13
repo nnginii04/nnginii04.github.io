@@ -175,3 +175,8 @@ footer .glyphicon {
         font-size: 150px;
     }
 }
+.map-image {
+    width: 100%;
+    height: auto;
+    filter: grayscale(20%);
+}
