@@ -5,7 +5,7 @@ $(document).ready(function () {
         if (this.hash !== "") {
             // Prevent default anchor click behavior
             event.preventDefault();
-
+ㅌ
             // Store hash
             var hash = this.hash;
 
