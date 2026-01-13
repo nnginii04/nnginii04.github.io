@@ -4,16 +4,14 @@
     <title>YEJINJUNG | Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="YEJINJUNG portfolio - Web/Backend projects and skills.">
 
-    <!-- Fonts: Inter -->
+    <!-- Inter Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
@@ -39,8 +37,7 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#about">ABOUT</a></li>
-                <li><a href="#services">SKILLS</a></li>
-                <li><a href="#portfolio">PROJECTS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
@@ -50,22 +47,17 @@
 <!-- HERO -->
 <header class="hero">
     <div class="container hero-inner">
-        <p class="hero-eyebrow">Web / Backend · Mobility Interest</p>
+        <p class="hero-eyebrow">Web / Backend · Data · Mobility · AI</p>
         <h1 class="hero-title">YEJINJUNG</h1>
-        <p class="hero-subtitle">
-            I build clean, reliable web services with a focus on structure, collaboration, and finish quality.
+        <p class="hero-sub">
+            Web & Backend engineer designing data pipelines and AI-driven systems for decision support.<br>
+            <span class="hero-sub-ko">데이터 품질과 구조를 먼저 설계하는 개발자</span>
         </p>
 
-        <div class="hero-cta">
+        <div class="hero-btns">
             <a href="https://github.com/nnginii04" target="_blank" class="btn btn-primary btn-lg">GitHub</a>
-            <a href="https://nnginii.tistory.com/" target="_blank" class="btn btn-default btn-lg">Blog</a>
-            <a href="#portfolio" class="btn btn-ghost btn-lg">View Projects</a>
-        </div>
-
-        <div class="hero-meta">
-            <span class="hero-chip">Inter</span>
-            <span class="hero-chip">Navy Theme</span>
-            <span class="hero-chip">Bootstrap</span>
+            <a href="https://nnginii.tistory.com/" target="_blank" class="btn btn-ghost btn-lg">Blog</a>
+            <a href="#projects" class="btn btn-outline btn-lg">View Projects</a>
         </div>
     </div>
 </header>
@@ -73,169 +65,120 @@
 <!-- ABOUT -->
 <section id="about" class="section">
     <div class="container">
-        <div class="row section-grid">
-            <div class="col-sm-8">
-                <h2 class="section-title">About</h2>
-                <p class="section-lead">
-                    소프트웨어융합학과에 재학 중이며, 웹 기반 서비스 구조와 백엔드 로직 구현에 관심을 가지고 있습니다.
-                </p>
+        <h2 class="section-title">About</h2>
+        <p class="section-lead">
+            기능 구현보다 먼저 데이터의 기준과 흐름을 정의하는 것을 중요하게 생각합니다.
+            서로 다른 입력이 어떤 규칙으로 처리되고 재사용 가능한 형태로 남는지 고민하며,
+            재현 가능하고 유지 가능한 구조를 목표로 합니다.
+        </p>
 
-                <ul class="about-list">
-                    <li><strong>관심</strong> : Web/Backend, 모빌리티 도메인, 서비스 구조 설계</li>
-                    <li><strong>강점</strong> : 기능을 작은 단위로 분리하고, Git 커밋 흐름으로 정리하며 완성도 있게 마무리</li>
-                    <li><strong>목표</strong> : 사용자 입장에서 안정적인 서비스를 만드는 개발자</li>
-                </ul>
-            </div>
-
-            <div class="col-sm-4 text-center">
-                <div class="about-badge">
-                    <span class="glyphicon glyphicon-user"></span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section id="services" class="section section-muted">
-    <div class="container text-center">
-        <h2 class="section-title">Skills</h2>
-        <p class="section-lead">사용해본 기술 스택</p>
-
-        <div class="row slideanim skill-row">
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-icon">
-                        <span class="glyphicon glyphicon-console"></span>
-                    </div>
-                    <h4 class="card-title">Backend</h4>
-                    <p class="card-text">Java, Spring Boot, MySQL</p>
-                </div>
-            </div>
-
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-icon">
-                        <span class="glyphicon glyphicon-globe"></span>
-                    </div>
-                    <h4 class="card-title">Frontend</h4>
-                    <p class="card-text">HTML, CSS, JavaScript, Bootstrap</p>
-                </div>
-            </div>
-
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-icon">
-                        <span class="glyphicon glyphicon-cog"></span>
-                    </div>
-                    <h4 class="card-title">Tools</h4>
-                    <p class="card-text">Git, GitHub, IntelliJ, VS Code</p>
-                </div>
-            </div>
+        <div class="about-tags">
+            <span class="tag">Data Pipeline</span>
+            <span class="tag">Backend</span>
+            <span class="tag">Preprocessing Standards</span>
+            <span class="tag">Decision Support</span>
         </div>
     </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="portfolio" class="section">
-    <div class="container text-center">
+<section id="projects" class="section section-muted">
+    <div class="container">
         <h2 class="section-title">Projects</h2>
-        <p class="section-lead">수업 및 개인 프로젝트</p>
+        <p class="section-lead">요약만 담고, 자세한 내용은 블로그 글로 연결합니다.</p>
 
-        <div class="row slideanim project-row">
+        <div class="row project-row">
+
             <!-- Project 1 -->
             <div class="col-sm-4">
                 <div class="project-card">
-                    <img src="assets/images/paris.jpg" alt="Spring MVC project">
-                    <div class="project-body">
-                        <p class="project-title"><strong>Spring MVC 웹 프로젝트</strong></p>
-                        <p class="project-desc">
-                            Spring MVC 구조 기반으로 컨트롤러–서비스–뷰 흐름을 구현한 웹 프로젝트
-                        </p>
-                        <p class="project-tech"><strong>Tech</strong> : Java, Spring, HTML, CSS</p>
-                        <a href="https://github.com/nnginii04" target="_blank" class="btn btn-default btn-sm project-btn">GitHub</a>
-                    </div>
+                    <div class="project-icon" aria-hidden="true">🚗</div>
+                    <h4 class="project-title">악천후 환경에서의 실시간 차선 탐지 및 분류 시각화 시스템</h4>
+                    <p class="project-meta">고려대학교 세종 산학협력단 · 2025.03 – 2025.08</p>
+                    <p class="project-summary">
+                        악천후 환경 이미지 전처리 기준을 정의하고 데이터 품질 관점에서 분석했습니다.
+                        전처리된 데이터 기반 실시간 차선 탐지 결과를 시각화하여 조건별 특성을 비교했습니다.
+                    </p>
+
+                    <a class="project-link"
+                       href="https://nnginii.tistory.com/59"
+                       target="_blank"
+                       rel="noopener">
+                        프로젝트 자세히 보기 →
+                    </a>
                 </div>
             </div>
 
             <!-- Project 2 -->
             <div class="col-sm-4">
                 <div class="project-card">
-                    <img src="assets/images/newyork.jpg" alt="Data analysis project">
-                    <div class="project-body">
-                        <p class="project-title"><strong>데이터 분석 미니 프로젝트</strong></p>
-                        <p class="project-desc">
-                            공공 데이터를 활용한 데이터 전처리 및 간단한 시각화를 수행한 프로젝트
-                        </p>
-                        <p class="project-tech"><strong>Tech</strong> : Python, Pandas</p>
-                        <a href="https://github.com/nnginii04" target="_blank" class="btn btn-default btn-sm project-btn">GitHub</a>
-                    </div>
+                    <div class="project-icon" aria-hidden="true">🚇</div>
+                    <h4 class="project-title">기상 변화에 따른 지하철 혼잡도 상관분석 및 예측</h4>
+                    <p class="project-meta">기상청 · 2025.05 – 2025.06</p>
+                    <p class="project-summary">
+                        기상·승하차·혼잡도 데이터를 통합하는 전처리 파이프라인을 설계했습니다.
+                        시간 단위·기준 불일치를 정의하고 집계·정규화·결측치 처리 로직을 자동화했습니다.
+                    </p>
+
+                    <a class="project-link"
+                       href="https://nnginii.tistory.com/42"
+                       target="_blank"
+                       rel="noopener">
+                        프로젝트 자세히 보기 →
+                    </a>
                 </div>
             </div>
 
             <!-- Project 3 -->
             <div class="col-sm-4">
                 <div class="project-card">
-                    <img src="assets/images/sanfran.jpg" alt="Team collaboration project">
-                    <div class="project-body">
-                        <p class="project-title"><strong>팀 프로젝트 / 협업 경험</strong></p>
-                        <p class="project-desc">
-                            GitHub 기반 협업으로 이슈 관리 및 커밋 단위 작업 흐름을 경험한 프로젝트
-                        </p>
-                        <p class="project-tech"><strong>Tech</strong> : Git, GitHub</p>
-                        <a href="https://github.com/nnginii04" target="_blank" class="btn btn-default btn-sm project-btn">GitHub</a>
-                    </div>
+                    <div class="project-icon" aria-hidden="true">🛡️</div>
+                    <h4 class="project-title">딥페이크 범죄 대응을 위한 AI 탐지 모델 경진대회</h4>
+                    <p class="project-meta">국립과학수사연구원 · 2025.10 – 2025.11</p>
+                    <p class="project-summary">
+                        딥페이크 탐지를 위한 대규모 이미지 데이터셋 구축 및 전처리 파이프라인을 구성했습니다.
+                        데이터 불균형·노이즈 문제를 분석하며 데이터 품질이 결과에 미치는 영향을 검토했습니다.
+                    </p>
+
+                    <a class="project-link"
+                       href="https://nnginii.tistory.com/60"
+                       target="_blank"
+                       rel="noopener">
+                        프로젝트 자세히 보기 →
+                    </a>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section section-muted">
+<section id="contact" class="section">
     <div class="container">
-        <h2 class="section-title text-center">Contact</h2>
+        <h2 class="section-title">Contact</h2>
 
-        <div class="row contact-grid">
-            <div class="col-sm-6">
-                <div class="contact-card">
-                    <p class="contact-line">
-                        <span class="glyphicon glyphicon-envelope"></span>
-                        <a href="mailto:love040416@naver.com">love040416@naver.com</a>
-                    </p>
-                    <p class="contact-line">
-                        <span class="glyphicon glyphicon-link"></span>
-                        <a href="https://github.com/nnginii04" target="_blank">GitHub</a>
-                        <span class="contact-sep">·</span>
-                        <a href="https://nnginii.tistory.com/" target="_blank">Blog</a>
-                    </p>
-                    <p class="contact-note">Thanks for visiting.</p>
-                </div>
-            </div>
-
-            <div class="col-sm-6">
-                <div class="contact-card contact-card-alt">
-                    <p class="contact-small-title">Quick Summary</p>
-                    <ul class="contact-mini">
-                        <li>Inter typography</li>
-                        <li>Navy corporate tone</li>
-                        <li>Clean section structure</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="contact-box">
+            <p class="contact-line">
+                <span class="glyphicon glyphicon-envelope"></span>
+                <a href="mailto:love040416@naver.com">love040416@naver.com</a>
+            </p>
+            <p class="contact-line">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="https://github.com/nnginii04" target="_blank" rel="noopener">GitHub</a>
+                <span class="contact-sep">·</span>
+                <a href="https://nnginii.tistory.com/" target="_blank" rel="noopener">Blog</a>
+            </p>
         </div>
     </div>
 </section>
-
-<!-- MAP -->
-<img src="assets/images/map.jpg" class="img-responsive map-image" alt="map">
 
 <footer class="footer">
     <div class="container text-center">
         <a href="#myPage" class="to-top" title="To Top">
             <span class="glyphicon glyphicon-chevron-up"></span>
         </a>
-        <p class="footer-text">© 2026 YEJINJUNG Portfolio</p>
+        <p class="footer-text">© 2026 YEJINJUNG</p>
     </div>
 </footer>
 
