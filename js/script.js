@@ -1,34 +1,23 @@
 $(document).ready(function () {
-    // Add smooth scrolling to all links in navbar + footer link
-    $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
+    var NAV_OFFSET = 70;
 
-            // Store hash
-            var hash = this.hash;
+    $(".navbar a, footer a[href='#myPage'], a[href='#background']").on("click", function (event) {
+        var hash = this.hash;
+        if (!hash) return;
 
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 900, function () {
+        var $target = $(hash);
+        if ($target.length === 0) return;
 
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-        } // End if
+        event.preventDefault();
+
+        $("html, body").animate(
+            { scrollTop: $target.offset().top - NAV_OFFSET },
+            650,
+            function () { window.location.hash = hash; }
+        );
+
+        if ($(".navbar-toggle").is(":visible")) {
+            $(".navbar-collapse").collapse("hide");
+        }
     });
-
-    $(window).scroll(function () {
-        $(".slideanim").each(function () {
-            var pos = $(this).offset().top;
-
-            var winTop = $(window).scrollTop();
-            if (pos < winTop + 600) {
-                $(this).addClass("slide");
-            }
-        });
-    });
-})
+});
